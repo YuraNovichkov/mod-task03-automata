@@ -14,8 +14,7 @@ class Automata
 	const char* menu[N] = { "Чай","Кофе","Молоко" };
 	const unsigned int price[N] = { 70,100,50 };
 	STATES state;
-
-	STATES getState();
+	
 	bool check(unsigned int num);
 	void cook();
 	void finish();
@@ -25,6 +24,7 @@ public:
 	void off();
 	void coin(unsigned int);
 	const char** etMenu();
+	STATES getState();
 	int choice(unsigned int);
 	int cancel();
 };
