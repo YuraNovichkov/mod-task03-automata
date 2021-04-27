@@ -1,5 +1,4 @@
 #include "Automata.h"
-#include <Windows.h>
 
 Automata::Automata()
 {
@@ -85,7 +84,6 @@ void Automata::cook()
 	if (state == CHECK)
 	{
 		state = COOK;
-		Sleep(3000);
 		finish();
 	}
 }
@@ -95,6 +93,5 @@ void Automata::finish()
 	if (state == COOK)
 	{
 		state = WAIT;
-		Sleep(3000);
 	}
 }
